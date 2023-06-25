@@ -1,0 +1,36 @@
+@import "../../../app.component.scss";
+
+.container {
+  width: 100%;
+  padding: 4%;
+
+  p {
+    color: rgba(237, 85, 59, 1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+  }
+
+  .categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    img {
+      width: 405.29px;
+      height: 240.64px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+  }
+}

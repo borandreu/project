@@ -1,0 +1,14 @@
+<div class="container">
+  <p>Categories</p>
+  <h2>Explore our Top Categories</h2>
+
+  <div class="categories">
+    <div class="card" *ngFor="let category of bookCategories">
+      <img [src]="[category.photoUrl]" [alt]="[category.title]" />
+      <p>{{ category.title }}</p>
+    </div>
+  </div>
+  <div class="button">
+    <app-view-more></app-view-more>
+  </div>
+</div>

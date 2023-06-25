@@ -1,0 +1,41 @@
+<div class="search-container">
+    <input type="text" id="search-input" placeholder="Search...">
+    <button type="button" >Search</button>
+  </div>
+
+  <div class="container1">
+
+  <div class="dropdown-container">
+    <label for="category-dropdown">Category:</label>
+    <select id="category-dropdown">
+      <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+    </select>
+  </div>
+  
+  <div class="dropdown-container">
+    <label for="author-dropdown">Author:</label>
+    <select id="author-dropdown" >
+      <option *ngFor="let author of authors" [value]="author">{{ author }}</option>
+    </select>
+  </div>
+
+
+</div>
+
+  <div class="container">
+    <div class="top">
+      <p>Some quality items</p>
+      <h1>Most readed books</h1>
+    </div>
+    <div class="carousel">
+      
+          <div class="image-container">
+            <img src="../../../../assets/book16 1.png">
+            <img src="../../../../assets/book4 4.png">
+            <img src="../../../../assets/book3 4.png">
+            <img src="../../../../assets/Group 298.png">
+          </div>
+
+    </div>
+  </div>
+  

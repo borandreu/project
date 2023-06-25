@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="top">
+    <p>Some quality items</p>
+    <h1>New release books</h1>
+  </div>
+  <div class="carousel">
+    <ng-container *ngFor="let book of newReleases">
+      <div class="card">
+        <div class="body">
+          <img [src]="[book.photoUrl]" [alt]="[book.title]" />
+        </div>
+        <div class="desc">
+          <h2>{{ book.title }}</h2>
+          <p>{{ book.author }}</p>
+          <p class="rate">{{ book.rating }}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

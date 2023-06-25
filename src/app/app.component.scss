@@ -1,0 +1,32 @@
+* {
+  // border: 2.5px dotted black;
+  font-family: "Inter";
+  box-sizing: border-box;
+  font-style: normal;
+}
+
+h1 {
+  // font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 145%;
+
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
+}
+
+h1,
+h2 {
+  color: #393280;
+}
+
+p {
+  color: rgba(57, 50, 128, 0.8);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 180%;
+
+  letter-spacing: 0.04em;
+}

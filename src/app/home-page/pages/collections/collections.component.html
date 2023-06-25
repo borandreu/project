@@ -1,0 +1,16 @@
+<div class="main">
+  <div class="card" *ngFor="let c of collection | slice : 0 : slice">
+    <div class="top">
+      <img [src]="c.photoUrl" alt="" />
+    </div>
+    <div class="bottom">
+      <p>{{ c.title }}</p>
+      <p>{{ c.author }}</p>
+      <p>{{ c.rating }}</p>
+    </div>
+  </div>
+  <app-view-more
+    (click)="seeMore()"
+    *ngIf="slice !== collection.length"
+  ></app-view-more>
+</div>
